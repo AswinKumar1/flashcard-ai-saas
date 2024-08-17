@@ -1,4 +1,4 @@
-# [Flashcard AI SaaS](https://vercel.com/aswin-kumars-projects-9880e7aa/flashcard-ai-saas/ETe42BV9BoSWLczsAAdPMMKmJWPP)
+# [Flashcard AI SaaS](https://flashcard-ai-saas.vercel.app/)
 
 ## Overview
 
