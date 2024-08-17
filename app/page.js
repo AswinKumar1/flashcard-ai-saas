@@ -71,9 +71,26 @@ export default function Home() {
           <Typography variant="h5" gutterBottom>
             The easiest way to make flashcards from your text
           </Typography>
-          <Button variant="contained" color="primary" sx={{ mt: 2, mr: 2 }} href="/generate">
-            Get Started
-          </Button>
+          <Box sx = {{mt: 2}}>
+            <Button 
+            variant="contained" 
+            color="primary" 
+            sx={{mt: 2}}
+            href="/generate"
+            >
+              Generate a set
+            </Button>
+          </Box>
+          <Box sx = {{mt: 2}}>
+            <Button 
+            variant="contained" 
+            color="primary" 
+            sx={{mt: 2}}
+            href="/flashcards"
+            >
+              View your sets
+            </Button>
+          </Box>
         </Box>
         <Box sx={{ my: 6 }}>
           <Typography variant="h4" gutterBottom align="center" sx={{ mb: 2 }}>
