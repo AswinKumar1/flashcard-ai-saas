@@ -8,6 +8,7 @@ import { lightTheme, darkTheme } from "./theme";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { AppBar, Button, Toolbar, Typography, Box, Grid } from "@mui/material";
 import Head from "next/head";
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -207,6 +208,7 @@ export default function Home() {
           </Grid>
         </Box>
       </Box>
+      <Analytics />
     </ThemeProvider>
   );
 }
