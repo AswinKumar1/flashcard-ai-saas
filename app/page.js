@@ -84,7 +84,7 @@ export default function Home() {
                 Easy Text Input
               </Typography>
               <Typography>
-                Just paste your text and we'll do the rest. Creating flashcards has never been easier.
+                Just paste your text and we will do the rest. Creating flashcards has never been easier.
               </Typography>
             </Grid>
             <Grid item xs={12} md={4}>
