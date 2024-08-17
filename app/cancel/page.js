@@ -8,7 +8,7 @@ export default function Cancel() {
           Payment Cancelled
         </Typography>
         <Typography variant="h6" gutterBottom>
-          Your payment was cancelled. Please try again if you'd like to proceed with the subscription.
+          Your payment was cancelled. Please try again if you&apos;d like to proceed with the subscription.
         </Typography>
       </Box>
     </Container>
