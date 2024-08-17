@@ -1,6 +1,8 @@
+// app/page.js
+
 'use client';
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ThemeProvider, CssBaseline, Switch } from "@mui/material";
 import { lightTheme, darkTheme } from "./theme";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
@@ -9,17 +11,24 @@ import Head from "next/head";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [backgroundImage, setBackgroundImage] = useState('');
 
   const handleThemeToggle = () => {
     setIsDarkMode(!isDarkMode);
   };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setBackgroundImage(isDarkMode ? '/dark_mode.jpg' : '/light_mode.jpg');
+    }
+  }, [isDarkMode]);
 
   return (
     <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
       <CssBaseline />
       <Box
         sx={{
-          backgroundImage: `url(${isDarkMode ? '/dark_mode.jpg' : '/light_mode.jpg'})`,
+          backgroundImage: `url(${backgroundImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
@@ -201,4 +210,3 @@ export default function Home() {
     </ThemeProvider>
   );
 }
-
